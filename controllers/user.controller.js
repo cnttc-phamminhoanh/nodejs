@@ -33,21 +33,7 @@ module.exports.get = function(req,res){
 
 module.exports.postCreate = function(req,res){
 	req.body.id = shortid.generate();
-	var errors = [];
-	if(!req.body.name){
-		errors.push('Name is required.');
-	}
-	if(!req.body.phone){
-		errors.push('Phone is required.');
-	}
-	if(errors.length>0){
-		res.render('users/create',{
-			errors : errors,
-			values : req.body
-		});	
-		console.log(errors);
-		return;	
-	}
 	db.get('users').push(req.body).write();
 	res.redirect('/users');
+	//console.log(res.locals);
 };
