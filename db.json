@@ -15,7 +15,9 @@
     {
       "name": "yoonseno",
       "phone": "0555997165",
-      "id": "g0re2drdk"
+      "id": "g0re2drdk",
+      "email": "oanhpham@gmail.com",
+      "password": "7085e6b4fb5bf71436221f6ccd1af40c"
     },
     {
       "name": "pham minh oanh",
@@ -25,7 +27,9 @@
     {
       "name": "ai hoai",
       "phone": "0848512232",
-      "id": "I245YWgNT"
+      "id": "I245YWgNT",
+      "email": "ginhoang@gmail.com",
+      "password": "e088b6a20b4e94349a60c80debc5d091"
     },
     {
       "name": "hoang thi ai hoai",

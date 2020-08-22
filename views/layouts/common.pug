@@ -14,6 +14,8 @@ html
 					li.nav-item
 						a.nav-link(href='users') Users
 			span.navbar-text
-				a.nav-link(href='/auth/login') Login 				
+				a.nav-link(href='/auth/login') Login 	
+			if user
+				p=user.name				
 		.container.pt-5
 			block content
