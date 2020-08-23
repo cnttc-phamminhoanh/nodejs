@@ -13,8 +13,10 @@ html
 						a.nav-link(href='/') Home 
 					li.nav-item
 						a.nav-link(href='/users') Users
-			span.navbar-text
-				a.nav-link(href='/auth/login') Login 	
+					li.nav-item
+						a.nav-link(href='/products') Products	
+			//- span.navbar-text
+			//- 	a.nav-link(href='/auth/login') Login 	
 			if user
 				p=user.name				
 		.container.pt-5
