@@ -9,13 +9,16 @@ block content
 			button(class="btn btn-danger ml-2") Search
 	table.table
 		tr
+			th Avatar
 			th Name
 			th Phone
 			th Actions
 
 		each user in users 
 			tr
-				td=user.name
-				td=user.phone
+				td
+					img(src="http://localhost:3000/"+user.avatar,width="40",height="40",style="image-rendering: unset;object-fit: fill;")
+				td(style="line-height:40px;")=user.name
+				td(style="line-height:40px;")=user.phone
 				td
 					a.btn.btn-light(href='/users/'+user.id) View

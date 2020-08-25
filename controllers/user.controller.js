@@ -34,6 +34,7 @@ module.exports.get = function(req,res){
 
 module.exports.postCreate = function(req,res){
 	req.body.id = shortid.generate();
+	req.body.avatar = (req.file.destination + req.file.filename).split("/").slice(2).join("/");
 	db.get('users').push(req.body).write();
 	res.redirect('/users');
 	//console.log(res.locals);

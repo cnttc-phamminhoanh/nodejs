@@ -5,19 +5,22 @@
       "phone": "0857412345",
       "id": "KIbCXoFq3",
       "email": "oanhpham41121@gmail.com",
-      "password": "f7bbdd55c0b053eccd59774b0f654178"
+      "password": "f7bbdd55c0b053eccd59774b0f654178",
+      "avatar": "uploads/7c0f1eed2866bce0239bed2896c0fa91"
     },
     {
       "name": "no",
       "phone": "0891234655",
-      "id": "UTPFeM5LV"
+      "id": "UTPFeM5LV",
+      "avatar": "uploads/237ef84f01556c12540f060570edc613"
     },
     {
       "name": "yoonseno",
       "phone": "0555997165",
       "id": "g0re2drdk",
       "email": "oanhpham@gmail.com",
-      "password": "7085e6b4fb5bf71436221f6ccd1af40c"
+      "password": "7085e6b4fb5bf71436221f6ccd1af40c",
+      "avatar": "uploads/2b7f9628656b20992d8b86690970d9f0"
     },
     {
       "name": "pham minh oanh",
@@ -25,21 +28,12 @@
       "id": "knH4fN6eQ"
     },
     {
-      "name": "ai hoai",
-      "phone": "0848512232",
-      "id": "I245YWgNT",
-      "email": "ginhoang@gmail.com",
-      "password": "e088b6a20b4e94349a60c80debc5d091"
-    },
-    {
       "name": "hoang thi ai hoai",
       "phone": "0855181532",
-      "id": "YpVGnuEfx"
-    },
-    {
-      "name": "minh oanh",
-      "phone": "0484166232",
-      "id": "QiuV59nO1"
+      "id": "YpVGnuEfx",
+      "email": "ginhoang@gmail.com",
+      "password": "e088b6a20b4e94349a60c80debc5d091",
+      "avatar": "uploads/3dff49326ff1717e9a89ff3fefa4b603"
     },
     {
       "name": "hoang thi",
@@ -47,14 +41,10 @@
       "id": "GwvjGY5bS"
     },
     {
-      "name": "pham minh",
-      "phone": "0857875232",
-      "id": "xFSSEv0u1"
-    },
-    {
-      "name": "anh hoang",
+      "name": "ai hoai",
       "phone": "0777415464",
-      "id": "RDsX7iUxE"
+      "id": "UxFTf41XU",
+      "avatar": "uploads/82006e9ba43cfbd174988c332a256f64"
     }
   ],
   "products": [

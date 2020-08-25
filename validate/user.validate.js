@@ -11,7 +11,6 @@ module.exports.postCreate = function(req,res,next){
 			errors : errors,
 			values : req.body
 		});	
-		console.log(errors);
 		return;	
 	}
 	//res.locals.success = true; // truyền biến từ Middleware này sang Middleware khác res.local
