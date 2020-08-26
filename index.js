@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 
 var express = require('express');
 
@@ -8,7 +8,11 @@ var userRoute = require('./routes/user.route.js');
 
 var authRouter = require('./routes/auth.route.js');
 
-var authMiddleware = require('./middlewares/auth.middleware.js')
+var cartRoute = require('./routes/cart.route.js');
+
+var authMiddleware = require('./middlewares/auth.middleware.js');
+
+var sessionMiddleware = require('./middlewares/session.middleware.js');
 
 var productRoute = require('./routes/product.route.js');
 
@@ -23,6 +27,8 @@ app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 app.use(cookieParser(process.env.SESSION_SECRET));
+
+app.use(sessionMiddleware);
 
 app.use(express.static('public'));
 
@@ -39,6 +45,8 @@ app.use('/auth',authRouter);
 app.use('/users',authMiddleware.requireAuth,userRoute);
 
 app.use('/products',productRoute);
+
+app.use('/cart',cartRoute);
 
 app.listen(port,function(){
 	console.log('Server listening on port ' + port);
