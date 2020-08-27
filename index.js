@@ -4,11 +4,15 @@ var express = require('express');
 
 var cookieParser = require('cookie-parser')
 
+var csurf = require('csurf')
+
 var userRoute = require('./routes/user.route.js');
 
 var authRouter = require('./routes/auth.route.js');
 
 var cartRoute = require('./routes/cart.route.js');
+
+var transferRoute = require('./routes/transfer.route.js')
 
 var authMiddleware = require('./middlewares/auth.middleware.js');
 
@@ -30,6 +34,8 @@ app.use(cookieParser(process.env.SESSION_SECRET));
 
 app.use(sessionMiddleware);
 
+app.use(csurf({cookie:true}));
+
 app.use(express.static('public'));
 
 var port = 3000;
@@ -47,6 +53,8 @@ app.use('/users',authMiddleware.requireAuth,userRoute);
 app.use('/products',productRoute);
 
 app.use('/cart',cartRoute);
+
+app.use('/transfer',authMiddleware.requireAuth,transferRoute);
 
 app.listen(port,function(){
 	console.log('Server listening on port ' + port);
